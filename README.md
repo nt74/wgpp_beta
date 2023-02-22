@@ -1,7 +1,7 @@
 # wgpp_beta
 Arch Linux AUR package for latest Beta-Release of WebGrab+Plus.
 
-Arch Linux AUR package using AppImage installer.
+Arch Linux AUR package installer.
 
 **Install instructions**
 ```
