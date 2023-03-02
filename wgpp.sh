@@ -33,15 +33,14 @@ missingSysFiles() {
 
 missingWGPPDir() {
 	if [ ! -d "$WGPP_CFGDIR" ]; then
-		echo ":: No $WGPP_EXE working directory found for user '$WGPP_USR', exiting."
-		helpMsg
+		echo ":: No '$WGPP_EXE' working directory found for user '$WGPP_USR', exiting."
 		exit 1
 	fi
 }
 
 custFolder() {
 	if [[ -z "$cust_dir" ]]; then
-		echo ":: Empty input, exiting."
+		echo ":: Empty custom directory input, exiting."
 		exit 1
 	fi
 	WGPP_CFGDIR=$(realpath "$cust_dir")
